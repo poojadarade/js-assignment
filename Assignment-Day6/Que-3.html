@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title"></h2>
+    <h4 id="time"></h4>
+    <button id="dark">Switch to Dark Mode</button>
+    
+
+
+    <script>
+         
+         const name = prompt("Enter your name","Anonymous");
+
+           title.innerText += `Welcome to the family ${name}`;
+
+
+          const dmode = document.getElementById('dark');
+
+           dmode.onclick = function changeColor(){
+    
+               document.body.style.backgroundColor = 'black';
+              document.body.style.color = 'white';
+              document.body.style.fontFamily = 'Helvetica';
+   
+}
+
+
+          const ctime = document.getElementById('time');
+
+
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    ctime.innerText = time;
+}
+
+// clock();
+
+setInterval(clock,1000);
+
+    </script>
+</body>
+</html>

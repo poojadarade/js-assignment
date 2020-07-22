@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day6</title>
+    
+</head>
+<body style="text-align: center;">
+		<h2>JavaScript - Function to Display Table of an entered Number.</h2>
+		<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table." onclick='printTable()'/>
+            <p id="pPrint"></p>
+	
+
+    <script>
+        
+        function printTable(){
+		var num;
+		num=Number(document.getElementById('txtNumber').value);
+		for(var i=1; i<=10; ++i){
+			var pTag= document.getElementById('pPrint');
+			pTag.innerHTML += (num+ " * " + i + " = " + (num*i) + "<br/>" )    
+            
+	 
+		}
+        
+	}
+         
+       
+    </script>
+</body>
+</html>
