@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Quote Generator</h1>
+    <div id="quoteDisplay"></div>
+    <button onclick="newQuote()">New Quote</button>
+    <script>
+        var quotes = ['It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going.- Brian Tracy','We Become What We Think About. -Earl Nightingale','The Person Who Says It Cannot Be Done Should Not Interrupt The Person Who Is Doing It.– Chinese Proverb','Everything You’ve Ever Wanted Is On The Other Side Of Fear.- George Addair','Success Is Getting What You Want, Happiness Is Wanting What You Get. – W. P. Kinsella','Your Life Only Gets Better When You Get Better.- Brian Tracy'
+
+        ]
+        function newQuote(){
+            var randomNumber = Math.floor(Math.random()*(quotes.length));
+            document.getElementById('quoteDisplay').innerHTML=quotes[randomNumber];
+
+        }
+    </script>
+    
+</body>
+</html>
